@@ -14,7 +14,7 @@ export const reportsEmail = "reports-notes@etesync.com";
 
 export const forgotPassword = faq + "#forgot-password";
 
-export const serviceApiBase = "https://api.etebase.com/partner/etesync/";
+export const serviceApiBase = process.env.REACT_NATIVE_DEFAULT_API_PATH ?? "https://api.etebase.com/partner/etesync/";
 
 // In generic mode we don't have anything etesync.com specific (app store guidelines)
 export const genericMode = Platform.OS === "ios";
